@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: kashish04/auth
+    - image: kashish04/auth:latest
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -16,4 +16,3 @@ build:
         manual:
           - dest: .
             src: 'src/**/*.ts'
-    
