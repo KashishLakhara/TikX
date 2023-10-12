@@ -13,8 +13,8 @@ build:
       docker:
         dockerfile: Dockerfile
         network: host
-  sync:
-    manual:
-      - src: 'src/**/*.ts'
-        dest: .
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
       
