@@ -12,6 +12,7 @@ build:
       context: auth
       docker:
         dockerfile: Dockerfile
+        network: host
       sync:
         manual:
           - dest: .
