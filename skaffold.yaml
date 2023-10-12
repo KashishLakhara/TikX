@@ -6,8 +6,7 @@ deploy:
       - ./infra/k8s/*
 build:
   local:
-    push: false
-    tagPolicy: none
+    push: true
   artifacts:
     - image: kashiish19/auth
       context: auth
