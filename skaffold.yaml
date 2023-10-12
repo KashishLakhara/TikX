@@ -15,5 +15,6 @@ build:
         network: host
   sync:
     manual:
-      - dest: .
-        src: 'src/**/*.ts'
+      - src: 'src/**/*.ts'
+        dest: .
+      
