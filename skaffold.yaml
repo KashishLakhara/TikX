@@ -14,10 +14,8 @@ build:
   tagPolicy:
     sha256: {}
   local: {}
-
+defaultRepo: kashiish19/auth
 sync:
   manual:
     - dest: .
       src: 'src/**/*.ts'
-
-defaultRepo: kashiish19/auth
