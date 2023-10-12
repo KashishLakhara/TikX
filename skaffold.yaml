@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: kashiish19/auth
+    - image: kashiish19/auth:latest
       context: auth
       docker:
         dockerfile: Dockerfile
