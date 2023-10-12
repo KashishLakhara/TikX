@@ -15,7 +15,3 @@ build:
       docker:
         dockerfile: Dockerfile
         network: host
-  tagPolicy:
-    sha256: {}
-  local: {}
-defaultRepo: kashiish19/auth
