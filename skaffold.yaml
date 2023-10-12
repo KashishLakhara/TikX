@@ -17,5 +17,5 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-      tagPolicy:
-        gitCommit: {}
+tagPolicy:
+  gitCommit: {}
