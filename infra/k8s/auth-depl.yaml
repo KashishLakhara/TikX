@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: kashish04/auth
+          image: kashiish19/auth
 ---
 apiVersion: v1   
 kind: Service
