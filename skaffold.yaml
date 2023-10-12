@@ -4,6 +4,10 @@ deploy:
   kubectl:
     manifests:
       - ./infra/k8s/*
+sync:
+  manual:
+    - dest: .
+      src: 'src/**/*.ts'
 build:
   artifacts:
     - image: kashiish19/auth
@@ -15,7 +19,3 @@ build:
     sha256: {}
   local: {}
 defaultRepo: kashiish19/auth
-sync:
-  manual:
-    - dest: .
-      src: 'src/**/*.ts'
