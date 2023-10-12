@@ -4,10 +4,6 @@ deploy:
   kubectl:
     manifests:
       - ./infra/k8s/*
-sync:
-  manual:
-    - dest: .
-      src: 'src/**/*.ts'
 build:
   artifacts:
     - image: kashiish19/auth
@@ -15,3 +11,7 @@ build:
       docker:
         dockerfile: Dockerfile
         network: host
+sync:
+  manual:
+    - dest: .
+      src: 'src/**/*.ts'
