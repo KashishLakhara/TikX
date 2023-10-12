@@ -5,13 +5,15 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
+  local:
+    push: false
   artifacts:
     - image: kashiish19/auth
       context: auth
       docker:
         dockerfile: Dockerfile
         network: host
-sync:
-  manual:
-    - dest: .
-      src: 'src/**/*.ts'
+  sync:
+    manual:
+      - dest: .
+        src: 'src/**/*.ts'
