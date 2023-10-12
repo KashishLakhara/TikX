@@ -13,8 +13,12 @@ build:
       docker:
         dockerfile: Dockerfile
         network: host
+    tagPolicy:
+      sha256: {}
+    local: {}
       sync:
         manual:
           - dest: .
             src: 'src/**/*.ts'
+defaultRepo: kashiish19/tikx
     
