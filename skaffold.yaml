@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: kashiish19/auth:latest
+    - image: kashiish19/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -17,4 +17,5 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-      
+      tagPolicy:
+        gitCommit: {}
